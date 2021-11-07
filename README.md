@@ -12,10 +12,11 @@ https://www.kaggle.com/andreisozinov/bellabeat-case-study-capstone-project-gdac
 [Dashboard Google Data Studio]( https://datastudio.google.com/s/lmeFIPry_20)
 
 ## 2. Visualization in  Tableau (SuperStore dataset)
- ![Дашборд Superstore](./Tableau_Dashboard.png)
+ ![Дашборд Superstore](https://github.com/aldinus/DE-101/blob/main/Module3/Tableau_Dashboard.png)
  [Дашборд Tableau Public](https://public.tableau.com/views/MySuperstore_16329379007340/Dashboard1)
  
 ## 2. Visualization in  Tableau (Airbnb dataset)
 
 ![image](./Capstone.png)
 [Дашборд в Tableau Public]( https://public.tableau.com/views/airbnb_16332740965890/Dashboard)
+https://github.com/aldinus/DE-101/blob/main/Module3/Capstone.png
