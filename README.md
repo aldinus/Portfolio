@@ -1,21 +1,21 @@
 # Portfolio
 Public portfolio of data analytics solutions
 
-## Google Data Analytics Cours Project in R (Kaggle)
+## 1. Google Data Analytics Cours Project in R (Kaggle)
 
 https://www.kaggle.com/andreisozinov/bellabeat-case-study-capstone-project-gdac
 
 
-## 5. Визуализация
+## 2. Visualization in  Google Data Studio (SuperStore dataset)
 
 ![image](https://user-images.githubusercontent.com/90471699/134238751-8aa30360-ce7b-43b8-acfc-5d9a9d8b90b7.png)
-[Дашборд в Google Data Studio]( https://datastudio.google.com/s/lmeFIPry_20)
+[Dashboard Google Data Studio]( https://datastudio.google.com/s/lmeFIPry_20)
 
-## 2. Подключение к БД Postgres, построен дашборд Superstore. 
+## 2. Visualization in  Tableau (SuperStore dataset)
  ![Дашборд Superstore](./Tableau_Dashboard.png)
  [Дашборд Tableau Public](https://public.tableau.com/views/MySuperstore_16329379007340/Dashboard1)
  
-## Capstone project
+## 2. Visualization in  Tableau (Airbnb dataset)
 
 ![image](./Capstone.png)
 [Дашборд в Tableau Public]( https://public.tableau.com/views/airbnb_16332740965890/Dashboard)
