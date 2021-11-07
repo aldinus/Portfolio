@@ -17,6 +17,6 @@ https://www.kaggle.com/andreisozinov/bellabeat-case-study-capstone-project-gdac
  
 ## 2. Visualization in  Tableau (Airbnb dataset)
 
-![image](./Capstone.png)
+![image](https://github.com/aldinus/DE-101/blob/main/Module3/Capstone.png)
 [Дашборд в Tableau Public]( https://public.tableau.com/views/airbnb_16332740965890/Dashboard)
-https://github.com/aldinus/DE-101/blob/main/Module3/Capstone.png
+
