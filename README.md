@@ -1,7 +1,7 @@
 # Portfolio
 Public portfolio of data analytics solutions
 
-## 1. Google Data Analytics Cours Project in R (Kaggle)
+## 1. Google Data Analytics Course Project in R (Kaggle)
 
 https://www.kaggle.com/andreisozinov/bellabeat-case-study-capstone-project-gdac
 
