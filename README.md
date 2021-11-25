@@ -22,3 +22,6 @@ https://www.kaggle.com/andreisozinov/bellabeat-case-study-capstone-project-gdac
 ![image](https://github.com/aldinus/DE-101/blob/main/Module3/Capstone.png)
 
 
+## 4. Visualization in  Excel (Ozon parcel service dataset)
+
+![image](https://github.com/aldinus/Portfolio/blob/main/ozon.png)
