@@ -25,3 +25,7 @@ https://www.kaggle.com/andreisozinov/bellabeat-case-study-capstone-project-gdac
 ## 4. Visualization in  Excel (Ozon parcel service dataset)
 
 ![image](https://github.com/aldinus/Portfolio/blob/main/ozon.png)
+
+
+## 5. Data Analytics Project in Python at Karpov Courses
+(https://github.com/aldinus/Portfolio/blob/main/final_v3.ipynb
