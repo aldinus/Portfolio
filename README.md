@@ -29,3 +29,6 @@ https://www.kaggle.com/andreisozinov/bellabeat-case-study-capstone-project-gdac
 
 ## 5. Data Analytics Project in Python at Karpov Courses
 (https://github.com/aldinus/Portfolio/blob/main/final_v3.ipynb
+
+## 3. Visualization in  Tableau (Karpov Courses mini profect)
+[Dashboard Tableau Public](https://public.tableau.com/app/profile/andrey.sozinov/viz/KarpovDashboardPractice_16507146697090/Dashboard1)
