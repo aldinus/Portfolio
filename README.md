@@ -1,5 +1,6 @@
 # Portfolio
-Public portfolio of data analytics solutions
+Public portfolio of data analytics solutions 
+SQL, Tableau, Python, R, Postgres, Clickhouse,  Microsoft Excel (Power Query, DAX)
 
 ## 1. Google Data Analytics Course Project in R (Kaggle)
 
