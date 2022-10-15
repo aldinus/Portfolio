@@ -34,3 +34,6 @@ https://github.com/aldinus/Portfolio/blob/main/final_v3.ipynb
 [Dashboard Tableau Public](https://public.tableau.com/app/profile/andrey.sozinov/viz/KarpovDashboardPractice_16507146697090/Dashboard1)
 
 <img width="937" alt="Dashboard" src="https://user-images.githubusercontent.com/90471699/195976083-7b61ee43-33c9-48d8-a2f4-4ac04ecaa697.png">
+
+## 7. Airflow Project in Python at Karpov Courses
+https://github.com/aldinus/Portfolio/blob/main/airflow_pjct.py
