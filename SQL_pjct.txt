@@ -1,0 +1,90 @@
+--TASK 1
+
+WITH user_data AS -- сводная таблица по пользователям
+(
+  SELECT 
+    DISTINCT studs.st_id AS st_id, 
+    -- уникальные студенты
+    studs.test_grp As group, 
+    -- принадлежность к группе
+    act.subjects_studied AS subjects_studied, 
+    -- изученные курсы
+    checksagg.revenue AS revenue, 
+    -- сумма оплат    
+    checksagg.subjects_purchased AS subjects_purchased -- оплаченные курсы
+  FROM 
+    default.studs AS studs -- все студенты
+    LEFT JOIN (
+      SELECT 
+        st_id, 
+        groupUniqArray(subject) AS subjects_studied -- группируем изучаемые курсы по студентам
+      FROM 
+        default.peas 
+      GROUP BY 
+        st_id
+    ) AS act ON act.st_id == studs.st_id 
+    LEFT JOIN (
+      SELECT 
+        st_id, 
+        SUM(money) AS revenue, 
+        groupUniqArray(subject) AS subjects_purchased --группируем купленные курсы по студентам
+      FROM 
+        default.final_project_check 
+      GROUP BY 
+        st_id
+    ) AS checksagg ON studs.st_id == checksagg.st_id
+) 
+SELECT 
+  group, 
+  SUM(revenue) / COUNT(st_id) AS ARPU, 
+  SUM(revenue) / SUM(
+    notEmpty(subjects_studied)
+  ) AS ARPAU, 
+  countIf(
+    notEmpty(subjects_purchased)
+  ) / COUNT(st_id) AS CR, 
+  -- считаем долю непустых массивов с купленными курсами в общем числе
+  countIf(
+    notEmpty(subjects_purchased)
+  ) / SUM(
+    notEmpty(subjects_studied)
+  ) AS CR_active, 
+  -- считаем долю непустых массивов с купленными курсами в числе непустых массивов изучаемых курсов
+  countIf(
+    like(
+      toString(subjects_purchased), 
+      '%Math%'
+    ) 
+    AND like(
+      toString(subjects_studied), 
+      '%Math%'
+    )
+  ) / countIf(
+    like(
+      toString(subjects_studied), 
+      '%Math%'
+    )
+  ) AS CR_math -- доля изучающих и купивших курсы по математике в общем числе изучающих ее
+FROM 
+  user_data 
+GROUP BY 
+  group 
+ORDER BY 
+  group
+
+
+--TASK 2
+
+SELECT
+        test_grp,
+        sum(ch.money) / count(DISTINCT st.st_id)                                                AS ARPU,
+        sum(ch.money) / count(DISTINCT ch.st_id)                                                AS ARPAU,
+        count(DISTINCT ch.st_id) / count(DISTINCT st.st_id)                                     AS CR,
+        count(DISTINCT ch.st_id) / count(DISTINCT p.st_id)                                      AS CR_active,
+        count(DISTINCT CASE WHEN p.subject = 'math' AND ch.subject = 'math' THEN st.st_id END) 
+        / count(DISTINCT CASE WHEN p.subject = 'math' THEN st.st_id END)                        AS CR_math
+    
+    FROM studs st                                                        -- all users
+    LEFT JOIN peas p                  ON st.st_id = p.st_id              -- active users
+    LEFT JOIN default.final_project_check ch               ON st.st_id = ch.st_id             -- paying users
+    GROUP BY test_grp
