@@ -1,6 +1,7 @@
 # Portfolio
 Public portfolio of data analytics solutions 
-SQL, Tableau, Python, R, Postgres, Clickhouse,  Microsoft Excel (Power Query, DAX)
+
+SQL, Tableau, Python, Airflow, Postgres, Clickhouse,  Microsoft Excel (Power Query, DAX) and R
 
 ## 1. Google Data Analytics Course Project in R (Kaggle)
 
